@@ -28,7 +28,6 @@ class demopgtesting
         System.out.println("connection done ");
         //Statement st=con.createStatement();
 
-        
         PreparedStatement pst=con.prepareStatement(sql);
         pst.setString(1,sname);
         pst.setInt(2,rollno);
