@@ -16,6 +16,5 @@ String sname="prathemesh";
         System.out.println("done feteching all result done in ");
 
         con.close();
-
     }
 }
