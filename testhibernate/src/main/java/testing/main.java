@@ -8,16 +8,13 @@ import org.hibernate.Session;
 public class main {
     static void main(String[] args) {
         student s1=new student();
-        s1.setMarks(78);
-        s1.setName("Atharv");
-        s1.setRoll_no(107);
+        s1.setMarks(98);
+        s1.setName("2ndtopper");
+        s1.setRoll_no(111);
 
-        System.out.println(s1);
         Configuration cfg=new Configuration();
         cfg.configure();
         cfg.addAnnotatedClass(testing.student.class);
-
-
 
         SessionFactory sf=cfg.buildSessionFactory();
         Session session=sf.openSession( );
@@ -25,5 +22,6 @@ public class main {
 
         session.save(s1);
         transaction.commit();
+        System.out.println(s1);
     }
 }
