@@ -2,7 +2,7 @@ package testing;
 import jakarta.persistence.*;
 
 @Entity
-
+//@Embeddable
 public class laptop {
     @Id
     private int lid;
